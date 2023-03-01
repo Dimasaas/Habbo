@@ -16,7 +16,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@v2
@@ -38,6 +38,6 @@ jobs:
         with:
           app-name: 'habbo4i20'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7225D6658B0544FBBAFEFE38C5951DBD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7774BADAF83E4C058AAB7C21550A1F00 }}
           package: '${{ env.PACKAGE_DIRECTORY }}'
           respect-pom-xml: true
